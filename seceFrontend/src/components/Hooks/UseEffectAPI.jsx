@@ -1,11 +1,14 @@
 import { useState } from "react"
 import axios from 'axios'
 const UseEffect =()=>{
-    var [post,setPost]=useState([])
+    var [posts,setPost]=useState([])
     useEffect(()=>{
         var response=axios
             .get("https://jsonplaceholer.typicode.com/posts/")
-            .then((res)=>console.log(res))
+            .then((res)=>{
+                console.log(res.data)
+                setPost(res.data)
+            })
             .catch((err)=>console.log(err))
         console.log(response)
     },[])
