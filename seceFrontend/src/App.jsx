@@ -11,6 +11,7 @@ import Signup from "./components/Signup";
 import UseRef from "./components/Hooks/UseRef";
 import UseMemo from "./components/Hooks/UseMemo";
 import UseCallback from "./components/Hooks/UseCallback";
+import ReactLifecycleMethods from "./components/ReactLifecycleMethods";
 function App() {
   return (
     
@@ -29,7 +30,7 @@ function App() {
           <Route path="/use-ref" element={<UseRef/>}></Route>
           <Route path="/use-memo" element={<UseMemo/>}></Route>
           <Route path="/use-call" element={<UseCallback/>}></Route>
-
+          <Route path="/react-lifecycle-methods" element={<ReactLifecycleMethods/>}></Route>
 
         </Routes>
       </section>
