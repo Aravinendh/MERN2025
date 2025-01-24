@@ -8,6 +8,9 @@ import Navbar from "./components/Navbar";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import UseEffect from "./components/Hooks/UseEffect";
 import Signup from "./components/Signup";
+import UseRef from "./components/Hooks/UseRef";
+import UseMemo from "./components/Hooks/UseMemo";
+import UseCallback from "./components/Hooks/UseCallback";
 function App() {
   return (
     
@@ -23,6 +26,11 @@ function App() {
           <Route path="/UseEffect" element={<UseEffect />}></Route>
           <Route path="/use-api" element={<UseEffectAPI/>}></Route>
           <Route path="/Signup" element={<Signup/>}></Route>
+          <Route path="/use-ref" element={<UseRef/>}></Route>
+          <Route path="/use-memo" element={<UseMemo/>}></Route>
+          <Route path="/use-call" element={<UseCallback/>}></Route>
+
+
         </Routes>
       </section>
 
