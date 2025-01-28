@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect} from 'react'
 import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { memo } from 'react';
 
 const Navbar = ({ onLogout }) => {
 
@@ -33,6 +34,11 @@ const Navbar = ({ onLogout }) => {
                     <li><Link to='/Login' className="link">Login</Link></li>
                     <li><Link to='/use-ref' className="link">UseRef</Link></li>
                     <li><Link to='/use-memo' className="link">UseMemo</Link></li>
+                    <li><Link to='/use-context' className="link">UseContext</Link></li>
+                    <li><Link to='/update-number' className="link">UPdateNumber</Link></li>
+                    <li><Link to='/update-text' className="link">UpdateText</Link></li>
+
+
 
 
                     <li><Link to='/' className="link" onClick={onLogout}>Logout</Link></li>
